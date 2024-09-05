@@ -129,6 +129,7 @@ func (deq *Dequeue) Insert(val int) {
 	deq.calculatePointer(deq.bPointer.index, Insert)
 }
 
+// Helpers
 func (deq *Dequeue) calculatePointer(index int, op Operation) {
 	// check if index out of range, change bucket and reset pointerIndex
 	switch op {
